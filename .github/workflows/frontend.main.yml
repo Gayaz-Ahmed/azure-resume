@@ -27,7 +27,7 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "my-site" --name "gayaz" --resource-group "azure-resume-rg"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "my-site" --name "gayaz" --resource-group "azure-resume-rg" --no-wait
 
   # Azure logout 
     - name: logout
