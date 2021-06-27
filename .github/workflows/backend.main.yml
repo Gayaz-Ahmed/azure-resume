@@ -1,8 +1,11 @@
 name: deploy_backend
+# Deploys when push is made from the backend folder
 
 on:
   push:
-  - 'backend/**'
+    branches: [ main ]
+    paths:
+    - 'backend/**'
 
 env:
   AZURE_FUNCTIONAPP_NAME: GetResumeCounter  # set this to your application's name
