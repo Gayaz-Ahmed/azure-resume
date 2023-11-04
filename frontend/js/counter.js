@@ -7,7 +7,7 @@ const functionApiUrl = "https://getresumecounterfuncapp.azurewebsites.net/api/Ge
 const localFunctionAPI = 'http://localhost:7071/api/GetResumeCounter';
 
 const getVisitCount = () => {
-    let count = 30;
+    let count = 300;
     fetch(functionApiUrl).then(response =>{
         return response.json()
     }).then(response => {
